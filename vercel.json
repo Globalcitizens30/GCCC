@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "gccc-app/package.json", "use": "@vercel/static-build", "config": { "distDir": "gccc-app/build" } }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "gccc-app/build/index.html" }
+  ]
+}
